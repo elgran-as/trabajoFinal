@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>trabajo final</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="140" height="80" version="1.1">
+                <!-- Monitor -->
+                <rect x="50" y="80" width="55" height="35" rx="1" ry="1" fill="#F0E9D2">
+                    <animate attributeName="y" from="-200" to="10" dur="2s" begin="0s" fill="freeze" />
+                </rect>
+                <rect x="53" y="40" width="50" height="25" rx="2" ry="3" fill="#495579">
+                    <animate attributeName="y" from="-180" to="15" dur="2.5s" begin="0s" fill="freeze" />
+                </rect>
+               <!--teclado--> 
+                <polygon points="20,20 20,70 10,70 10,20" style="fill:#F0E9D2">
+                    <animate attributeName="points" from="130,-100 110,-100 20,-100 20,-100" to="105,50 135, 80 15,80 50,50" dur="2s" begin="0s" fill="freeze"/>
+                </polygon>
+                <polygon points="30,20 0,50 -10,50 -10,10" style="fill:#495579">
+                    <animate attributeName="points" from="110,-110 120,-110 30,-110 30,-110" to="100,55 125, 75 25,75 55,55" dur="2.5s" begin="0s" fill="freeze"/>
+               </polygon>
+            </svg>
+        </a>
+        <ul>
+            <li class="menu-item">
+                <a class="boton-item" href="./historia.html">HISTORIA</a>
+            </li>
+            <li class="menu-item">
+                <a class="boton-item" href="./juguemos.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="texto1">JUGUEMOS UN POCO</h1>
+    </header>
+    <section>
+        <h2>Armemos el rompecabezas y veamos qué imagen es...</h2>
+        <picture class="contenedor-cajas">
+            <div id="caja1" class="caja" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <div id="caja2" class="caja" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <div id="caja3" class="caja" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </picture>
+        <div class="contenedor-imagenes">
+            <img id="img2" class="img" src="./assets/imagenes/Rompe2.png" alt="pieza3" draggable="true" ondragstart="drag(event)">
+            <img id="img1" class="img" src="./assets/imagenes/Rompe1.png" alt="pieza1" draggable="true" ondragstart="drag(event)">
+            <img id="img3" class="img" src="./assets/imagenes/Rompe3.png" alt="pieza2" draggable="true" ondragstart="drag(event)">
+        </div>
+        <li class="reinicio">
+            <button class="botonReiniciar" onclick="reiniciar()">Reiniciar</button>
+        </li>
+    </section>
+    
+    <footer>
+        <img class="codigo" src="./assets/imagenes/logo.png" alt="codigo">
+        <p class="letras1">
+            PROGRAMACION
+            <br>
+            E
+            <br>
+            HISTORIA
+        </p>
+        <p class="letras">Pagina realizada por ARIEL SALVIA </p>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+</html>

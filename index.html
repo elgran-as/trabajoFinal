@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>trabajo final</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="140" height="80" version="1.1">
+                <!-- Monitor -->
+                <rect x="50" y="80" width="55" height="35" rx="1" ry="1" fill="#F0E9D2">
+                    <animate attributeName="y" from="-200" to="10" dur="2s" begin="0s" fill="freeze" />
+                </rect>
+                <rect x="53" y="40" width="50" height="25" rx="2" ry="3" fill="#495579">
+                    <animate attributeName="y" from="-180" to="15" dur="2.5s" begin="0s" fill="freeze" />
+                </rect>
+               <!--teclado--> 
+                <polygon points="20,20 20,70 10,70 10,20" style="fill:#F0E9D2">
+                    <animate attributeName="points" from="130,-100 110,-100 20,-100 20,-100" to="105,50 135, 80 15,80 50,50" dur="2s" begin="0s" fill="freeze"/>
+                </polygon>
+                <polygon points="10,10 0,50 0,50 -10,0" style="fill:#495579">
+                    <animate attributeName="points" from="110,-110 120,-110 30,-110 30,-110" to="100,55 125, 75 25,75 55,55" dur="2.5s" begin="0s" fill="freeze"/>
+               </polygon>
+            </svg>
+        </a>
+        <ul>
+            <li class="menu-item">
+                <a class="boton-item" href="./historia.html">HISTORIA</a>
+            </li>
+            <li class="menu-item">
+                <a class="boton-item" href="./juguemos.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="texto1">PROGRAMACION E HISTORIA</h1>
+    </header>
+    <h2>CONTENIDO</h2>
+    <picture class="tarjetas">
+        <div class="opcion">
+            <img class="tarjeta" src="./assets/imagenes/img1.jpg" alt="">
+            <p class="letras">Conozcamos un poco sobre la historia de la programacion</p>
+            <a class="boton" href="./historia.html">ir a Historia</a>
+        </div>
+        <div class="opcion">
+            <img class="tarjeta" src="./assets/imagenes/img2.jpg" alt="">
+            <p class="letras">Juguemos un poco sobre la computacion</p>
+            <a class="boton" href="./juguemos.html">ir a Juego</a>
+        </div>
+    </picture>
+    <footer>
+        <img class="codigo" src="./assets/imagenes/logo.png" alt="codigo">
+        <p class="letras1">
+            PROGRAMACION
+            <br>
+            E
+            <br>
+            HISTORIA
+        </p>
+        <p class="letras">Pagina realizada por ARIEL SALVIA </p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

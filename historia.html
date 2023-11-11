@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>trabajo final</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="140" height="80" version="1.1">
+                <!-- Monitor -->
+                <rect x="50" y="80" width="55" height="35" rx="1" ry="1" fill="#F0E9D2">
+                    <animate attributeName="y" from="-200" to="10" dur="2s" begin="0s" fill="freeze" />
+                </rect>
+                <rect x="53" y="40" width="50" height="25" rx="2" ry="3" fill="#495579">
+                    <animate attributeName="y" from="-180" to="15" dur="2.5s" begin="0s" fill="freeze" />
+                </rect>
+               <!--teclado--> 
+                <polygon points="20,20 20,70 10,70 10,20" style="fill:#F0E9D2">
+                    <animate attributeName="points" from="130,-100 110,-100 20,-100 20,-100" to="105,50 135, 80 15,80 50,50" dur="2s" begin="0s" fill="freeze"/>
+                </polygon>
+                <polygon points="30,20 0,50 -10,50 -10,10" style="fill:#495579">
+                    <animate attributeName="points" from="110,-110 120,-110 30,-110 30,-110" to="100,55 125, 75 25,75 55,55" dur="2.5s" begin="0s" fill="freeze"/>
+               </polygon>
+            </svg>
+        </a>
+        <ul>
+            <li class="menu-item">
+                <a href="./historia.html">HISTORIA</a>
+            </li>
+            <li class="menu-item">
+                <a href="./juguemos.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="texto1">HISTORIA DE LA PROGRAMACION</h1>
+    </header>
+    <main class="info">
+        <div class="item">
+             <h2>El principio de la historia de la programación</h2>
+             <p>El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p>
+        </div>
+        <div class="item">
+            <p>Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
+                Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.</p>
+            <h2>Lenguaje de ensamblaje</h2>
+       </div>
+       <div class="item">
+            <h2>Los primeros lenguajes de programación</h2>
+            <p>
+            FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.
+            <br>
+            En 1959 se desarrollo Cobol, que está detrás de la mayoría de los sistemas de transacciones de negocio de los procesos de las tarjetas de crédito, ATMs (Modo de Transferencia Asíncrona), telefonía, sistemas hospitalarios, gobierno, sistemas automatizados y señales de tráfico.
+            El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje famipar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense
+            <br>    
+            En 1964 se creo Basic, que fue diseñado como un lenguaje simppficado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos.
+            <br>            
+            Entre 1969 y 1973 se crea C,a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».
+            <br>                         
+            En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader
+            Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia
+            </p>
+        </div>
+    </main>
+
+        <h2>Un breve video para complementar lo visto</h2> 
+        <article class="container">
+            <video class="posterImg" poster="./assets/imagenes/img-video.jpg" id="video">
+                <source src="./assets/video/historia-Comp.mp4" type="video/mp4">
+                <source src="./assets/video/historia-Comp.ogv" type="vide/ogv">
+            </video>
+            <div class="controls">
+                <button id="playBtn" class="btn" onclick="playVideo()" >
+                    <img class="play" src="./assets/imagenes/play.svg" alt="play">
+                </button>
+                <button id="pauseBtn" class="btn"onclick="pauseVideo()">
+                    <img class="pause" src="./assets/imagenes/pausa.svg" alt="pause">
+                </button>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <div class="timer">
+                    <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <img class="codigo" src="./assets/imagenes/logo.png" alt="codigo">
+            <p class="letras1">
+                PROGRAMACION
+                <br>
+                E
+                <br>
+                HISTORIA
+            </p>
+            <p class="letras">Pagina realizada por ARIEL SALVIA </p>
+        </footer>
+        <script src="./script.js"></script>
+
+</body>
+</html>
